@@ -1,8 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;212;300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: Oswald;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 85px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFF;
+  max-width: 734px;
+  margin-bottom: 35px;
+}
+
+header {
+  background-image: url(../media/first-screen.png);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 740px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  font-style: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  color: #FFF;
+}
+
+.box-ivent {
+  background-color: #FFF;
+  padding: 57px 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1110px;
+}
+
+.box-ivent-items {
+  display: flex;
+  flex-direction: column;
+}
+.box-ivent-items .age {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 107px;
+  color: #F7654A;
+}
+.box-ivent-items .age-sub {
+  color: black;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+}
+.box-ivent-items .age-sub-sub {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #999999;
 }
 
 #projectcards {
@@ -45,6 +110,23 @@
   margin-top: 10px;
   font-size: 12px;
   color: #999999;
+}
+
+footer {
+  background-color: #404149;
+}
+
+.footer-wrap {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 30px 0;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=style.css.map */
