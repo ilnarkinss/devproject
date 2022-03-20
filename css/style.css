@@ -1,13 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;212;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap");
 * {
   margin: 0;
   padding: 0;
   font-family: Oswald;
 }
 
+h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 53px;
+  margin-bottom: 66px;
+  padding-left: auto;
+}
+
+.wrap {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
 h1 {
   font-weight: 500;
-  font-size: 48px;
+  font-size: 64px;
   line-height: 85px;
   text-align: center;
   letter-spacing: 0.02em;
@@ -40,9 +55,9 @@ header {
 
 .box-ivent {
   background-color: #FFF;
-  padding: 57px 130px;
+  padding: 57px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   width: 1110px;
 }
@@ -72,44 +87,180 @@ header {
 
 #projectcards {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 250px 0 150px 0;
   color: #404149;
 }
-#projectcards > div {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-#projectcards > div > h2 {
+#projectcards h2 {
   font-weight: 600;
+  text-align: center;
 }
-#projectcards #cards {
+#projectcards .wrap {
+  display: flex;
+  justify-content: center;
+}
+#projectcards #info {
   display: grid;
-  grid-template-columns: repeat(3, 250px);
-  height: 300px;
+  grid-template-columns: repeat(3, 350px);
   column-gap: 30px;
   margin-top: 50px;
 }
-#projectcards #cards > div {
-  column-gap: 30px;
+#projectcards #info > div {
+  transition: background-color 0.5s ease;
 }
-#projectcards #cards > div > img {
+#projectcards #info > div:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+#projectcards #info > div:hover img {
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  transition: all 0.5s ease;
+}
+#projectcards #info img {
   width: 100%;
+  margin-bottom: 75px;
 }
-#projectcards #cards > div > #line {
+#projectcards #info h4 {
+  position: relative;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: left;
+}
+#projectcards #info h4::after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 0;
   margin: 10px 0;
   width: 55px;
   height: 6px;
   background-color: tomato;
-  border-radius: 5px;
 }
-#projectcards #cards > div > p {
+#projectcards #info p {
   margin-top: 10px;
-  font-size: 12px;
+  font-family: "Open Sans";
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
   color: #999999;
+}
+
+.smart_project {
+  width: 100%;
+  padding: 30px 0 45px 0;
+  background-color: #F7654A;
+  margin-bottom: 150px;
+}
+.smart_project .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #FFF;
+}
+.smart_project .wrap h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+}
+.smart_project .wrap p {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 71px;
+  letter-spacing: 0.02em;
+}
+.smart_project .wrap .btn {
+  color: black;
+  padding: 14px 46px;
+  text-decoration: none;
+  background-color: #FFF;
+  box-shadow: none;
+  transition: all 0.5s ease-out;
+}
+.smart_project .wrap .btn:hover {
+  box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.49);
+}
+
+.activities {
+  margin-bottom: 100px;
+}
+.activities h2 {
+  text-align: center;
+}
+.activities .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: repeat(2, 250px);
+  grid-gap: 30px;
+  justify-content: center;
+}
+.activities .cards .card {
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 80px;
+}
+.activities .cards .card .fa {
+  font-size: 40px;
+  color: #F7654A;
+  margin-bottom: 30px;
+}
+.activities .cards .card h4 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 31px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.contact {
+  margin-bottom: 150px;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.contact .contact_container {
+  display: grid;
+  grid-template-columns: repeat(4, 255px);
+  gap: 30px;
+  justify-content: center;
+}
+.contact .contact_container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .contact_container p {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 35px;
+  color: #999999;
+  text-transform: uppercase;
+  text-align: center;
+}
+.contact .contact_container .head_text {
+  color: #999999;
+  margin-bottom: 25px;
+}
+.contact .contact_container .info_text {
+  color: #000;
+}
+.contact .contact_container .email_text {
+  color: #F7654A;
+}
+.contact .contact_container .fa, .contact .contact_container .fas {
+  font-size: 49px;
+  color: #F7654A;
+  margin-bottom: 36px;
 }
 
 footer {
@@ -127,6 +278,114 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+
+@media (max-width: 1280px) {
+  header {
+    min-height: 640px;
+  }
+  header .box-ivent {
+    width: 90%;
+    margin: 0 auto;
+    padding: 45px 0;
+  }
+
+  #projectcards {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 1024px) {
+  header {
+    background-size: cover;
+    background-position: center;
+  }
+
+  #projectcards #info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  #projectcards #info > div {
+    width: 350px;
+  }
+
+  .wrap {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .activities .cards {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 250px);
+  }
+
+  .contact .contact_container {
+    grid-template-columns: repeat(2, 255px);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  footer .footer-wrap {
+    max-width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .wrap {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .box-ivent-items .age {
+    font-size: 52px;
+    line-height: 82px;
+  }
+  .box-ivent-items .age-sub {
+    font-size: 28px;
+  }
+  .box-ivent-items .age-sub-sub {
+    font-size: 14px;
+  }
+
+  .activities .cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(250px);
+  }
+
+  .contact .contact_container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  #projectcards {
+    margin-top: 50px;
+  }
+  #projectcards #info {
+    margin-top: 10px;
+  }
+  #projectcards #info > div {
+    width: 100%;
+  }
+
+  .smart_project .wrap h3 {
+    font-size: 38px;
+  }
+  .smart_project .wrap p {
+    font-size: 16px;
+  }
+
+  .contact .contact_container {
+    gap: 50px;
+  }
+  .contact .contact_container p {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
