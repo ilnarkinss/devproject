@@ -4,6 +4,7 @@
   padding: 0;
   font-family: Oswald;
 }
+
 h2 {
   text-transform: uppercase;
   font-weight: 500;
@@ -12,6 +13,7 @@ h2 {
   margin-bottom: 66px;
   padding-left: auto;
 }
+
 h1 {
   font-weight: 500;
   font-size: 48px;
@@ -23,6 +25,7 @@ h1 {
   max-width: 734px;
   margin-bottom: 35px;
 }
+
 header {
   background-image: url(../media/first-screen.png);
   display: flex;
@@ -35,6 +38,7 @@ header {
   text-align: center;
   text-transform: uppercase;
 }
+
 .subtitle {
   font-weight: 400;
   font-size: 18px;
@@ -42,6 +46,7 @@ header {
   margin-bottom: 20px;
   color: #FFF;
 }
+
 .box-ivent {
   background-color: #FFF;
   padding: 57px 130px;
@@ -50,6 +55,7 @@ header {
   align-items: center;
   width: 1110px;
 }
+
 .box-ivent-items {
   display: flex;
   flex-direction: column;
@@ -72,6 +78,7 @@ header {
   line-height: 27px;
   color: #999999;
 }
+
 #projectcards {
   width: 100%;
   height: 100vh;
@@ -113,6 +120,7 @@ header {
   font-size: 12px;
   color: #999999;
 }
+
 .activities {
   padding: 105px 405px 50px 405px;
 }
@@ -146,6 +154,7 @@ header {
   text-transform: uppercase;
   text-align: center;
 }
+
 .contact {
   padding: 50px 405px 230px 405px;
 }
@@ -155,7 +164,7 @@ header {
 .contact .contact_container {
   display: grid;
   grid-template-columns: repeat(4, 255px);
-  grid-gap-column: 30px;
+  column-gap: 30px;
 }
 .contact .contact_container > div {
   display: flex;
@@ -185,9 +194,11 @@ header {
   color: #F7654A;
   margin-bottom: 36px;
 }
+
 footer {
   background-color: #404149;
 }
+
 .footer-wrap {
   max-width: 1110px;
   margin: 0 auto;
@@ -200,4 +211,5 @@ footer {
   font-size: 16px;
   line-height: 22px;
 }
+
 /*# sourceMappingURL=style.css.map */
