@@ -10,7 +10,6 @@ h2 {
   font-size: 36px;
   line-height: 53px;
   margin-bottom: 66px;
-  padding-left: auto;
 }
 h1 {
   font-weight: 500;
@@ -114,10 +113,13 @@ header {
   color: #999999;
 }
 .activities {
-  padding: 105px 405px 50px 405px;
-}
-.activities h2 {
-  margin-left: 40%;
+  padding: 50px 21vw 50px 21vw;
+  width: 100vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .activities .cards {
   display: grid;
@@ -144,18 +146,19 @@ header {
   line-height: 31px;
   letter-spacing: 2%;
   text-transform: uppercase;
-  text-align: center;
 }
 .contact {
-  padding: 50px 405px 230px 405px;
-}
-.contact h2 {
-  margin-left: 45%;
+  padding: 50px 21vw 150px 21vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .contact .contact_container {
   display: grid;
   grid-template-columns: repeat(4, 255px);
-  grid-gap-column: 30px;
+  column-gap: 30px;
 }
 .contact .contact_container > div {
   display: flex;
@@ -168,7 +171,6 @@ header {
   line-height: 35px;
   color: #999999;
   text-transform: uppercase;
-  text-align: center;
 }
 .contact .contact_container .head_text {
   color: #999999;
@@ -199,5 +201,24 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+}
+@media (max-width: 1280px) {
+  .activities {
+    padding: 50px 31vw 50px 41vw;
+  }
+  .contact {
+    padding: 50px 31vw 150px 41vw;
+  }
+}
+@media (max-width: 768px) {
+  .activities .cards {
+    grid-template-columns: repeat(2, 350px);
+    grid-template-rows: repeat(3, 250px);
+  }
+  .contact .contact_container {
+    grid-template-columns: repeat(2, 255px);
+    grid-template-rows: repeat(2, 191px);
+    grid-row-gap: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
