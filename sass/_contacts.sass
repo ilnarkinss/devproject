@@ -1,14 +1,13 @@
 .contact
-    padding: 50px 21vw 150px 21vw
-    width: 100vw
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-align: center
+    margin-bottom: 150px
+    h2
+        text-align: center
+        margin-bottom: 60px
     .contact_container
         display: grid
         grid-template-columns: repeat(4, 255px)
-        column-gap: 30px
+        gap: 30px
+        justify-content: center
         & > div
             display: flex
             flex-direction: column
@@ -19,6 +18,7 @@
             line-height: 35px
             color: $light-font-color
             text-transform: uppercase
+            text-align: center
         .head_text
             color: $light-font-color
             margin-bottom: 25px
@@ -27,6 +27,6 @@
         .email_text
             color: $accent-color
         .fa, .fas
-            font-size: 29px
+            font-size: 49px
             color: $accent-color
             margin-bottom: 36px
