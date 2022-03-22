@@ -27,7 +27,7 @@ h1 {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: uppercase;
-  color: #FFF;
+  color: #fff;
   max-width: 734px;
   margin-bottom: 35px;
 }
@@ -50,11 +50,11 @@ header {
   font-size: 18px;
   line-height: 27px;
   margin-bottom: 20px;
-  color: #FFF;
+  color: #fff;
 }
 
 .box-ivent {
-  background-color: #FFF;
+  background-color: #fff;
   padding: 57px 0;
   display: flex;
   justify-content: space-around;
@@ -70,7 +70,7 @@ header {
   font-weight: 500;
   font-size: 72px;
   line-height: 107px;
-  color: #F7654A;
+  color: #f7654a;
 }
 .box-ivent-items .age-sub {
   color: black;
@@ -151,7 +151,7 @@ header {
 .smart_project {
   width: 100%;
   padding: 30px 0 45px 0;
-  background-color: #F7654A;
+  background-color: #f7654a;
   margin-bottom: 150px;
 }
 .smart_project .wrap {
@@ -159,7 +159,7 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  color: #FFF;
+  color: #fff;
 }
 .smart_project .wrap h3 {
   font-style: normal;
@@ -179,7 +179,7 @@ header {
   color: black;
   padding: 14px 46px;
   text-decoration: none;
-  background-color: #FFF;
+  background-color: #fff;
   box-shadow: none;
   transition: all 0.5s ease-out;
 }
@@ -207,10 +207,11 @@ header {
   justify-content: center;
   align-items: center;
   padding: 60px 80px;
+  transition: background-color 0.2s ease;
 }
 .activities .cards .card .fa {
   font-size: 40px;
-  color: #F7654A;
+  color: #f7654a;
   margin-bottom: 30px;
 }
 .activities .cards .card h4 {
@@ -219,6 +220,12 @@ header {
   line-height: 31px;
   text-align: center;
   letter-spacing: 0.02em;
+}
+.activities .cards .change-bg {
+  background-color: #f7654a;
+}
+.activities .cards .change-bg .fa {
+  color: #fff;
 }
 
 .contact {
@@ -255,11 +262,11 @@ header {
   color: #000;
 }
 .contact .contact_container .email_text {
-  color: #F7654A;
+  color: #f7654a;
 }
 .contact .contact_container .fa, .contact .contact_container .fas {
   font-size: 49px;
-  color: #F7654A;
+  color: #f7654a;
   margin-bottom: 36px;
 }
 
@@ -271,7 +278,7 @@ footer {
   max-width: 1110px;
   margin: 0 auto;
   padding: 30px 0;
-  color: #FFF;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -279,7 +286,7 @@ footer {
   font-size: 16px;
   line-height: 22px;
 }
-
+/*
 .popup_container .popup {
   width: 100%;
   min-height: 100%;
@@ -322,7 +329,44 @@ footer {
   align-items: center;
   cursor: pointer;
 }
+*/
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
+.popcard {
+  background-color: white;
+  margin: 10% auto;
+  padding: 40px;
+  width: 50%;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 15px 0 black;
+  animation: popup 0.5s;
+}
+.popcard .info_popup {
+  font-size: 36px;
+}
+.popcard p + p {
+  margin-top: 40px;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @media (max-width: 1280px) {
   header {
     min-height: 640px;
@@ -374,7 +418,7 @@ footer {
     max-width: 90%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .wrap {
     max-width: 90%;
     margin: 0 auto;
