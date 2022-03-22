@@ -14,7 +14,6 @@ window.onload = function () {
 			popup.style.display = "none";
 		}
 	}
-
 	const boxIventElems = document.querySelector('.box-ivent')
 	const ageElems = boxIventElems.querySelectorAll('.age')
 	ageElems.forEach(elem => {

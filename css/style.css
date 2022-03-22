@@ -221,6 +221,7 @@ header {
   font-size: 40px;
   color: #f7654a;
   margin-bottom: 30px;
+  transition: transform 0.5s ease;
 }
 .activities .cards .card h4 {
   font-weight: 500;
@@ -228,9 +229,6 @@ header {
   line-height: 31px;
   text-align: center;
   letter-spacing: 0.02em;
-}
-.activities .cards .change-bg .fa {
-  color: #fff;
 }
 
 .contact {
@@ -251,6 +249,12 @@ header {
   flex-direction: column;
   align-items: center;
 }
+.contact .contact_container > div:hover i {
+  transform: scale(1.5) rotateY(360deg) rotate(360deg);
+}
+.contact .contact_container > div:hover p {
+  transform: scale(1.2);
+}
 .contact .contact_container p {
   font-weight: 500;
   font-size: 24px;
@@ -258,6 +262,7 @@ header {
   color: #999999;
   text-transform: uppercase;
   text-align: center;
+  transition: transform 0.7s ease;
 }
 .contact .contact_container .head_text {
   color: #999999;
@@ -273,6 +278,7 @@ header {
   font-size: 49px;
   color: #f7654a;
   margin-bottom: 36px;
+  transition: transform 0.7s ease;
 }
 
 footer {

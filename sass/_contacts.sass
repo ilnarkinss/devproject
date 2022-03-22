@@ -12,6 +12,12 @@
 			display: flex
 			flex-direction: column
 			align-items: center
+
+			&:hover i
+				transform: scale(1.5) rotateY(360deg) rotate(360deg)
+
+			&:hover p
+				transform: scale(1.2)
 		p
 			font-weight: 500
 			font-size: 24px
@@ -19,14 +25,20 @@
 			color: $light-font-color
 			text-transform: uppercase
 			text-align: center
+			transition: transform 0.7s ease
+
 		.head_text
 			color: $light-font-color
 			margin-bottom: 25px
+
 		.info_text
 			color: #000
+
 		.email_text
 			color: $accent-color
+			
 		.fa, .fas
 			font-size: 49px
 			color: $accent-color
 			margin-bottom: 36px
+			transition: transform 0.7s ease
