@@ -286,8 +286,8 @@ footer {
   font-size: 16px;
   line-height: 22px;
 }
-/*
-.popup_container .popup {
+
+.band_container .band_holder {
   width: 100%;
   min-height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -296,24 +296,25 @@ footer {
   top: 0px;
   display: none;
 }
-.popup_container .popup .popup_content {
+
+.band_container .band_holder .band_content {
   margin: 15vw auto 0px auto;
-  width: 300px;
+  width: 400px;
   height: 300px;
-  padding: 30px;
-  box-sizing: border-box;
-  background-color: #F7654A;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px #000;
+  padding: 40px;
+  background-color: #f7654a;
+  box-shadow: 0px 2px 15px 0 #000;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  color: #Fff;
-  font-size: 24px;
+  font-size: 25px;
+  color: #fff;
   text-align: center;
 }
-.popup_container .popup .popup_content .closure {
+
+.band_container .band_holder .band_content .closure {
   position: absolute;
   top: -15px;
   right: -15px;
@@ -322,14 +323,14 @@ footer {
   border: 2px solid black;
   border-radius: 50%;
   background-color: #000;
-  color: #F7654A;
+  color: #f7654a;
   font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
-*/
+
 .popup {
   display: none;
   position: fixed;
